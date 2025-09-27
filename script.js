@@ -114,14 +114,5 @@ window.setReminder = function(idx) {
     }
 };
 
-window.onload = renderTasks;
 
-document.getElementById('test-notify-btn').onclick = function() {
-    Notification.requestPermission().then(permission => {
-        if (permission === "granted") {
-            new Notification("Test Notification", { body: "Notifications are working!" });
-        } else {
-            alert("Notifications are blocked or denied.");
-        }
-    });
-};
+window.onload = renderTasks;
