@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Study Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Smart Study Planner</h1>
+        <p>Organize your study schedule, set goals, and track your progress!</p>
+    </header>
+    <main>
+        <section id="add-task">
+            <h2>Add Study Task</h2>
+            <form id="task-form">
+                <input type="text" id="task-title" placeholder="Task Title" required>
+                <input type="date" id="task-date" required>
+                <input type="time" id="task-time" required>
+                <input type="text" id="task-goal" placeholder="Goal (e.g., chapters, hours)" required>
+                <button type="submit">Add Task</button>
+            </form>
+        </section>
+        <section id="tasks">
+            <h2>Your Study Tasks</h2>
+            <ul id="task-list"></ul>
+        </section>
+        <section id="timeline">
+            <h2>Visual Timeline</h2>
+            <div id="timeline-container"></div>
+        </section>
+        <section id="test-notification">
+            <h2>Test Notification</h2>
+            <button id="test-notify-btn">Send Test Notification</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Smart Study Planner</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
